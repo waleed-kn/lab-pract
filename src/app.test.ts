@@ -6,7 +6,7 @@ describe("API", () => {
     it("GET / returns hello message", async () => {
         const res = await request(app).get("/");
         expect(res.status).toBe(200);
-        expect(res.body.message).toBe("Hello CI/CD");
+        expect(res.body.message).toBe("Hello from my CI/CD pipeline");
     });
 
     it("GET /health returns ok", async () => {
